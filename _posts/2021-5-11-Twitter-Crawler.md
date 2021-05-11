@@ -1,4 +1,7 @@
-# How I built a twitter crawler
+---
+layout: post
+title: How I built a Twitter crawler
+---
 
 I was curious to use twitter data for a project I had in mind, and basically it was a answering a bunch of question regarding the behavior of users on twitter and how that is correlated with their followers' count. But when I got access to the developer's API, I was lost on how to get the data that I want. 
 
