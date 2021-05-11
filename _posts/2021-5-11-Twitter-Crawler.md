@@ -10,7 +10,7 @@ What I wanted was a random sample of users that isn't affected by users tweeting
 
 So this is just randomly traversing over a tree of users branched from a seed user until a certain depth, not unlike a binary search tree. 
 
-![an image alt text]({{ site.baseurl }}/images/tree.png "Binary Search Tree")
+![an image alt text]({{ site.baseurl }../images/tree.png "Binary Search Tree")
 
 We can see an example of a traversed tree from a seed user, where the maximum depth <em>l</em> is 4, while the new users recursed over from a seed user is <em>n</em> is 2, and the tweets to collect is <em>t</em> is 1. If user A is the seed user, then we collect the latest tweet and select 2 random users from his friends and followers, which turned out to be B and C.
 
