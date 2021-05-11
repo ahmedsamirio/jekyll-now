@@ -19,15 +19,14 @@ We can see an example of a traversed tree from a seed user at layer <em>d</em> w
 
 Then for each of these users we do the same as user A. This results for a total of <em>n<sup>d</sup></em> users for each layer where the starting layer <em>d</em> is 0, which equals 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>1</sup> + 1 = 15 users and 15 tweets.
 
-```python
-def stream_from_users(seed_user, tweets_per_user, users_per_user, depth):
-    tweets = collect_tweets(seed_user)
-    users = collect_random_users(seed_user)
-    if depth < limit_depth:
-        for user in random_users:
-	    stream_from_users(seed_user, tweets_per_user, users_per_user,
-			      depth+1)
-```
+	def stream_from_users(seed_user, tweets_per_user, users_per_user, depth):
+	    tweets = collect_tweets(seed_user)
+	    users = collect_random_users(seed_user)
+	    if depth < limit_depth:
+		for user in random_users:
+		    stream_from_users(seed_user, tweets_per_user, users_per_user,
+				      depth+1)
+
 
 This code snippet would serve to be the backbone of mining this data. But then I was faced with another question, which package should I use to get the data? and how shall I store it?
 
