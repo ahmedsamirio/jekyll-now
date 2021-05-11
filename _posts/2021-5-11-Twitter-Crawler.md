@@ -40,4 +40,5 @@ And then came the next hurdle, using Tweepy or Python-twitter was really easy, b
 Now it was just a matter of running the script, and then preparing the data in a format which enables answering the questions the I had in mind, which will be reserved for another post.
 
 
+To make a dataset on your own, you can use the script provided in the following repo.
 Github repo: <https://github.com/ahmedsamirio/twitter-crawler>
