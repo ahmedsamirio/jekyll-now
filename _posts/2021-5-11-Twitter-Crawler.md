@@ -17,16 +17,17 @@ So this is just randomly traversing over a tree of users branched from a seed us
 
 We can see an example of a traversed tree from a seed user at layer <em>d</em> which equals 0, where the maximum depth of layers <em>l</em> is 3, the new users recursed over from a seed user is <em>n</em> is 2, and the tweets to collect is <em>t</em> is 1. If user A is the seed user, then we collect the latest tweet and select 2 random users from his friends and followers, which turned out to be B and C.
 
-Then for each of these users we do the same as user A. This results for a total of <em>n^<sup>d</sup></em> users for each layer where the starting layer <em>d</em> is 0, which equals 2^<sup>3</sup> + 2^<sup>2</sup> + 2^<sup>1</sup> + 1 = 15 users and 15 tweets.
+Then for each of these users we do the same as user A. This results for a total of <em>n^d</em> users for each layer where the starting layer <em>d</em> is 0, which equals 2^3 + 2^2 + 2^1 + 1 = 15 users and 15 tweets.
 
-	def stream_from_users(seed_user, tweets_per_user, users_per_user, depth):
-	    tweets = collect_tweets(seed_user)
-	    users = collect_random_users(seed_user)
-	    if depth < limit_depth:
-		for user in random_users:
-		    stream_from_users(seed_user, tweets_per_user, users_per_user,
-				      depth+1)
-
+```python
+def stream_from_users(seed_user, tweets_per_user, users_per_user, depth):
+    tweets = collect_tweets(seed_user)
+    users = collect_random_users(seed_user)
+    if depth < limit_depth:
+	for user in random_users:
+	    stream_from_users(seed_user, tweets_per_user, users_per_user,
+			      depth+1)
+```
 
 This code snippet would serve to be the backbone of mining this data. But then I was faced with another question, which package should I use to get the data? and how shall I store it?
 
