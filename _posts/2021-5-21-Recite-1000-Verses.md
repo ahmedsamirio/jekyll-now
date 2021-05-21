@@ -27,4 +27,17 @@ I found this amazing github repo called [quran-json](https://github.com/risan/qu
 
 The information that I wanted was all surahs, their total verses, words and characters. That's why I downloaded a json file providing general info about each surah (it's number, name, translation , revelation place and total verses)
 
+```python
+url = 'https://unpkg.com/quran-json@latest/json/surahs.pretty.json'
+response = urllib.request.urlopen(url)
+data = json.loads(response.read())
+surahs = pd.DataFrame(data)
+```
+
+```python
+url = 'https://unpkg.com/quran-json@latest/json/quran/text.pretty.json'
+response = urllib.request.urlopen(url)
+data = json.loads(response.read())
+text = pd.DataFrame(data)
+```
 
