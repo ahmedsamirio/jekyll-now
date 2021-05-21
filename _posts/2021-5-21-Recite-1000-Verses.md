@@ -100,6 +100,22 @@ I figured out that I should stick with the most important part, which are the pa
 
 ![an image alt text](../images/second_order.png "Second Way Order")
 
+Total number of Surahs: 29  
+Total number of Verses: 1006  
+Total number of Words: 4495  
+Total number of Characters: 20831  
+
+Word count difference with Baseline: 666  
+Character count difference with Baseline: 2330  
+
+he number of pages from Juz Amma this way saves is 6.236970684039088
+
+By comparing the character difference to Surahs char count, we find that the difference between the baseline in the new way which is similar in simplicity to it is around 6.25 pages of Juz' Amma. 
+
+Now there are 2 choices for, so you either go with the easiest way to read 1000 verses which saves you around 8.25 pages, or you go with a still easy way that saves you 6.25 pages, or you go with the old way by reading the two Juz's back to back.
+
+This question wasn't intended as a call for laziness, afterall if you intended to pray with 1000 verses how dare anyone call you lazy, but it's a way to decrease any deterrents or obstacles between intending it and actually achieving it.
+
 
 
 
