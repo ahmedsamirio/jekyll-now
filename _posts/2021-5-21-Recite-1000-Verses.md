@@ -98,6 +98,9 @@ And it turns out that the number of pages from Juz Amma this way saves is 8.3253
 I figured out that I should stick with the most important part, which are the parts that finish the bulk of the verses. The first 3 Surahs (As-Saaffaat, Ar-Rahmaan and Al-Waaqia) completed 356 verses, which is around 35% of the way. If we recited them and started reciting without any skips from Al-Muddaththir, when could we get the 1000 verses?
 
 
+![an image alt text](../images/second_order.png "Second Way Order")
+
+
 
 
 
