@@ -45,6 +45,9 @@ text = pd.DataFrame(data)
 ```
 ![an image alt text](../images/text.png "Text DataFrame")
 
+
+# Analyzing the data
+
 After aggregating the information that I needed, I set out to find the answer. In order to find the easiest way to pray with 1000 verses, I needed to find which surahs have the easiest verses to read, that is they contain the least amount of words or characters per verse.
 
 The basic idea that I had was to rank the Surahs according to their word to verse, or char to verse ratio. After that I could figure out the cutoff point where the cumlative sum of the Surahs' verses reaches 1000, then sort them according to their number in the Quran to find out how to read them.
@@ -121,7 +124,9 @@ Now there are 2 choices for, so you either go with the easiest way to read 1000 
 
 This question wasn't intended as a call for laziness, afterall if you intended to pray with 1000 verses how dare anyone call you lazy, but it's a way to decrease any deterrents or obstacles between intending it and actually achieving it.
 
-# How would you pray 2, 4 or 8 Rakaas using the easiest way?
+# Illustrating how to pray using either ways
+
+## How would you pray 2, 4 or 8 Rakaas using the easiest way?
 
 I've illustrated how you would do that exactly in the next plots
 
@@ -134,7 +139,7 @@ I've illustrated how you would do that exactly in the next plots
 
 
 
-# How would you pray 2, 4 or 8 Rakaas using the second easiest way?
+## How would you pray 2, 4 or 8 Rakaas using the second easiest way?
 
 ![an image alt text](../images/second_two.png "Second Way - Two Rakaas")
 
@@ -143,6 +148,8 @@ I've illustrated how you would do that exactly in the next plots
 
 ![an image alt text](../images/second_eight.png "Second Way - Eight Rakaas")
 
+
+# Other Scenarios
 
 Now you might have started reading somewhere else, and you want to continue reciting a specific number of verses, but you are still looking for an easy way to do it. That's why I've the following charts.
 
