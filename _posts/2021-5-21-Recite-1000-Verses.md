@@ -50,10 +50,10 @@ The basic idea that I had was to rank the Surahs according to their word to vers
 
 But first we need to look at the baseline, in order to compare it with the new ways we are trying to find. And I summarized it into the following:
 
-Total number of Surahs: 48
-Total number of Verses: 995
-Total number of Words: 5161
-Total number of Characters: 23161
+Total number of Surahs: 48\n
+Total number of Verses: 995\n
+Total number of Words: 5161\n
+Total number of Characters: 23161\n
 
 Since we read Al-Fatihah at least one time in Qiyyam (In a one rakaa' wetr prayer), that would decrease 14 verses from the total 1000 verses. Meaning the we don't more than 993 verses to complete 1000 verses including the verses of Al-Fatihah.
 
