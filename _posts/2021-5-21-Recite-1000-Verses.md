@@ -33,13 +33,7 @@ response = urllib.request.urlopen(url)
 data = json.loads(response.read())
 surahs = pd.DataFrame(data)
 ```
-|    |   number | name          | transliteration_en   | translation_en       |   total_verses | revelation_type   |
-|---:|---------:|:--------------|:---------------------|:---------------------|---------------:|:------------------|
-|  0 |        1 | سورة الفاتحة  | Al-Faatiha           | The Opening          |              7 | Meccan            |
-|  1 |        2 | سورة البقرة   | Al-Baqara            | The Cow              |            286 | Medinan           |
-|  2 |        3 | سورة آل عمران | Aal-i-Imraan         | The Family of Imraan |            200 | Medinan           |
-|  3 |        4 | سورة النساء   | An-Nisaa             | The Women            |            176 | Medinan           |
-|  4 |        5 | سورة المائدة  | Al-Maaida            | The Table            |            120 | Medinan           |
+![an image alt text](../images/surahs.png "Surahs DataFrame")
 
 
 ```python
@@ -48,11 +42,6 @@ response = urllib.request.urlopen(url)
 data = json.loads(response.read())
 text = pd.DataFrame(data)
 ```
-|    |   surah_number |   verse_number | content                |   words_count |   chars_count |
-|---:|---------------:|---------------:|:-----------------------|--------------:|--------------:|
-|  0 |              1 |              1 | بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ |             4 |            20 |
-|  1 |              1 |              2 | ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ   |             4 |            18 |
-|  2 |              1 |              3 | ٱلرَّحْمَٰنِ ٱلرَّحِيمِ          |             2 |            13 |
-|  3 |              1 |              4 | مَٰلِكِ يَوْمِ ٱلدِّينِ          |             3 |            12 |
-|  4 |              1 |              5 | إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ |             4 |            19 |
+![an image alt text](../images/text.png "Text DataFrame")
+
 
