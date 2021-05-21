@@ -150,6 +150,11 @@ Now you might have started reading somewhere else, and you want to continue reci
 ![an image alt text](../images/other_3.png "Verses Count")
 
 
+Now you have all the tools to recite those 1000 verses, I pray that we're all blessed to be from those who did this.
+
+I hope that this post inspires those who read it to work on projects that they find interesting, and ask questions that can possibly optimize whatever good deeds they maybe doing.
+
+
 
 
 
