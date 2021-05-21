@@ -114,7 +114,13 @@ By comparing the character difference to Surahs char count, we find that the dif
 
 Now there are 2 choices for, so you either go with the easiest way to read 1000 verses which saves you around 8.25 pages, or you go with a still easy way that saves you 6.25 pages, or you go with the old way by reading the two Juz's back to back.
 
+![an image alt text](../images/word_counts.png "Word Counts")
+
+
+
 This question wasn't intended as a call for laziness, afterall if you intended to pray with 1000 verses how dare anyone call you lazy, but it's a way to decrease any deterrents or obstacles between intending it and actually achieving it.
+
+We
 
 
 
