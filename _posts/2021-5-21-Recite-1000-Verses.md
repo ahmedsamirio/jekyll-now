@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I built a Twitter crawler
+title: How to Recite 1000 Quran Verses
 ---
 
 # Introduction
