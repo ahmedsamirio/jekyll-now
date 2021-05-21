@@ -69,5 +69,7 @@ We can see the word to verse ratio in all Surahs is bimodal. We can see that the
 
 
 
+So using this information, we know that it would take 34 surahs to complete 1000 verses. But Surahs in here are sorted by the word to verse ratio, how would we actually read them if they were sorted by their number?
+
 
 
