@@ -44,4 +44,23 @@ text = pd.DataFrame(data)
 ```
 ![an image alt text](../images/text.png "Text DataFrame")
 
+After aggregating the information that I needed, I set out to find the answer. In order to find the easiest way to pray with 1000 verses, I needed to find which surahs have the easiest verses to read, that is they contain the least amount of words or characters per verse.
+
+The basic idea that I had was to rank the Surahs according to their word to verse, or char to verse ratio. After that I could figure out the cutoff point where the cumlative sum of the Surahs' verses reaches 1000, then sort them according to their number in the Quran to find out how to read them.
+
+But first we need to look at the baseline, in order to compare it with the new ways we are trying to find. And I summarized it into the following:
+
+Total number of Surahs: 48
+Total number of Verses: 995
+Total number of Words: 5161
+Total number of Characters: 23161
+
+Since we read Al-Fatihah at least one time in Qiyyam (In a one rakaa' wetr prayer), that would decrease 14 verses from the total 1000 verses. Meaning the we don't more than 993 verses to complete 1000 verses including the verses of Al-Fatihah.
+
+Now that we have our baseline, let's take a look into what the data dictates.
+
+We can see the word to verse ratio in all Surahs is bimodal. We can see that the a great proportion of the Surahs have low word to verse ratio. So how many of them would it take to complete 1000 verses if I we ranked the Surahs by word to verse in ascending order?
+
+
+![an image alt text](../images/word_to_verse.png "Surahs DataFrame")
 
