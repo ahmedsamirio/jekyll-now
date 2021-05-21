@@ -164,7 +164,7 @@ Now you have all the tools to recite those 1000 verses, I pray that we're all bl
 
 I hope that this post inspires those who read it to work on projects that they find interesting, and ask questions that can possibly optimize whatever good deeds they maybe doing.
 
-Project Notebook: https://github.com/ahmedsamirio/1000-quran-verses
+Project Notebook: <https://github.com/ahmedsamirio/1000-quran-verses>
 
 
 
