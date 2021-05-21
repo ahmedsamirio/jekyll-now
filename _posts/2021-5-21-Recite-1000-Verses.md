@@ -131,6 +131,14 @@ I've illustrated how you would do that exactly in the next plots
 
 
 
+# How would you pray 2, 4 or 8 Rakaas using the second easiest way?
+
+![an image alt text](../images/second_two.png "Second Way - Two Rakaas")
+
+
+![an image alt text](../images/second_four.png "Second Way - Four Rakaas")
+
+![an image alt text](../images/second_eight.png "Second Way - Eight Rakaas")
 
 
 
