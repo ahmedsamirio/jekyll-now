@@ -6,7 +6,7 @@ title: How to Recite 1000 Quran Verses
 It was the end of Ramadan when I began thinking about how I shall address the habit of night prayers (qiyyam) after the holy month, and thinking to myself that I should specifiy a daily goal (werd). And then I remembered the hadith:
 
 قال الرسول عليه الصلاة و السلام (من قامَ بعشرِ آياتٍ لم يُكتب منَ الغافلينَ، ومن قامَ بمائةِ آيةٍ كتبَ منَ القانتينَ، ومن قامَ بألفِ آيةٍ كتبَ منَ المقنطرينَ) الراوي: عبدالله بن عمرو   
-  المحدث: الألباني
+  المحدث: الألباني     
   المصدر: صحيح أبي داود 1398     
   خلاصة حكم المحدث: صحيح  
 
