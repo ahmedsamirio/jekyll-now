@@ -73,6 +73,33 @@ So using this information, we know that it would take 34 surahs to complete 1000
 
 ![an image alt text](../images/first_order.png "First Way Order")
 
+So by following this you wouldn't start at Al-Mulk, but rather at As-Saaffaat, and then skipping to Ar-Rahmaan and Al-Waaqia, then skip to Al-Muddaththir and recite until the end while skipping some Surahs that have high word to verse ratio.
+
+Summarizing this way like the old way would yield us:
+Total number of Surahs: 34  
+Total number of Verses: 1005  
+Total number of Words: 4272  
+Total number of Characters: 19764  
+
+Word count difference with Baseline: 889  
+Character count difference with Baseline: 3397  
+
+To better understand how does this difference fair out, let's find out how many pages of Juz' Amma (جزء عم) this way cuts out.
+
+```python
+juz_amma = surahs.query('number >= 78')
+page_word_count = juz_amma.total_words.sum() / 23
+words_saved = data_old.total_words.sum() - first_way.total_words.sum()
+pages_saved = words_saved/page_word_count
+```
+
+And it turns out that the number of pages from Juz Amma this way saves is 8.325325732899023. But this bothered me, as I didn't want to be always on the lookout for Surahs I was going to skip, whereas the old way provided a slick way to just go through the last two Juz's, was there a way to find a middle ground?
+
+I figured out that I should stick with the most important part, which are the parts that finish the bulk of the verses. The first 3 Surahs (As-Saaffaat, Ar-Rahmaan and Al-Waaqia) completed 356 verses, which is around 35% of the way. If we recited them and started reciting without any skips from Al-Muddaththir, when could we get the 1000 verses?
+
+
+
+
 
 
 
