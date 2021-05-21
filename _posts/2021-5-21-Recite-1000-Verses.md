@@ -7,7 +7,7 @@ It was the end of Ramadan when I began thinking about how I shall address the ha
 
 قال الرسول عليه الصلاة و السلام (من قامَ بعشرِ آياتٍ لم يُكتب منَ الغافلينَ، ومن قامَ بمائةِ آيةٍ كتبَ منَ القانتينَ، ومن قامَ بألفِ آيةٍ كتبَ منَ المقنطرينَ) الراوي: عبدالله بن عمرو   
   المحدث: الألباني
-  المصدر: صحيح أبي داود 1398   
+  المصدر: صحيح أبي داود 1398     
   خلاصة حكم المحدث: صحيح  
 
 The Prophet (peace be upon him) said: If anyone prays at night reciting regularly ten verses, he will not be recorded among the negligent; if anyone prays at night and recites a hundred verses, he will be recorded among those who are obedient to Allah; and if anyone prays at night reciting one thousand verses, he will be recorded among those who receive huge rewards. 
