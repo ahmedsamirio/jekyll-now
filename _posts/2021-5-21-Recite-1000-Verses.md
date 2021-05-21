@@ -5,7 +5,10 @@ title: How to Recite 1000 Quran Verses
 
 It was the end of Ramadan when I began thinking about how I shall address the habit of night prayers (qiyyam) after the holy month, and thinking to myself that I should specifiy a daily goal (werd). And then I remembered the hadith:
 
-قال الرسول عليه الصلاة و السلام (من قامَ بعشرِ آياتٍ لم يُكتب منَ الغافلينَ، ومن قامَ بمائةِ آيةٍ كتبَ منَ القانتينَ، ومن قامَ بألفِ آيةٍ كتبَ منَ المقنطرينَ)  الراوي: عبدالله بن عمرو | المحدث: الألباني | المصدر: صحيح أبي داود 1398 | خلاصة حكم المحدث: صحيح
+قال الرسول عليه الصلاة و السلام (من قامَ بعشرِ آياتٍ لم يُكتب منَ الغافلينَ، ومن قامَ بمائةِ آيةٍ كتبَ منَ القانتينَ، ومن قامَ بألفِ آيةٍ كتبَ منَ المقنطرينَ) الراوي: عبدالله بن عمرو   
+  المحدث: الألباني     
+  المصدر: صحيح أبي داود 1398     
+  خلاصة حكم المحدث: صحيح  
 
 The Prophet (peace be upon him) said: If anyone prays at night reciting regularly ten verses, he will not be recorded among the negligent; if anyone prays at night and recites a hundred verses, he will be recorded among those who are obedient to Allah; and if anyone prays at night reciting one thousand verses, he will be recorded among those who receive huge rewards. 
 
@@ -41,6 +44,9 @@ data = json.loads(response.read())
 text = pd.DataFrame(data)
 ```
 ![an image alt text](../images/text.png "Text DataFrame")
+
+
+# Analyzing the data
 
 After aggregating the information that I needed, I set out to find the answer. In order to find the easiest way to pray with 1000 verses, I needed to find which surahs have the easiest verses to read, that is they contain the least amount of words or characters per verse.
 
@@ -118,7 +124,9 @@ Now there are 2 choices for, so you either go with the easiest way to read 1000 
 
 This question wasn't intended as a call for laziness, afterall if you intended to pray with 1000 verses how dare anyone call you lazy, but it's a way to decrease any deterrents or obstacles between intending it and actually achieving it.
 
-# How would you pray 2, 4 or 8 Rakaas using the easiest way?
+# Illustrating how to pray using either ways
+
+## How would you pray 2, 4 or 8 Rakaas using the easiest way?
 
 I've illustrated how you would do that exactly in the next plots
 
@@ -131,7 +139,7 @@ I've illustrated how you would do that exactly in the next plots
 
 
 
-# How would you pray 2, 4 or 8 Rakaas using the second easiest way?
+## How would you pray 2, 4 or 8 Rakaas using the second easiest way?
 
 ![an image alt text](../images/second_two.png "Second Way - Two Rakaas")
 
@@ -140,6 +148,8 @@ I've illustrated how you would do that exactly in the next plots
 
 ![an image alt text](../images/second_eight.png "Second Way - Eight Rakaas")
 
+
+# Other Scenarios
 
 Now you might have started reading somewhere else, and you want to continue reciting a specific number of verses, but you are still looking for an easy way to do it. That's why I've the following charts.
 
@@ -153,6 +163,8 @@ Now you might have started reading somewhere else, and you want to continue reci
 Now you have all the tools to recite those 1000 verses, I pray that we're all blessed to be from those who did this.
 
 I hope that this post inspires those who read it to work on projects that they find interesting, and ask questions that can possibly optimize whatever good deeds they maybe doing.
+
+Project Notebook: <https://github.com/ahmedsamirio/1000-quran-verses>
 
 
 
