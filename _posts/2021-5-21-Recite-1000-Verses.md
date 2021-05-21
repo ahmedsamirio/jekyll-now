@@ -59,10 +59,15 @@ Since we read Al-Fatihah at least one time in Qiyyam (In a one rakaa' wetr praye
 
 Now that we have our baseline, let's take a look into what the data dictates.
 
+![an image alt text](../images/word_to_verse.png "Word to Verse Distribution")
+
+
 We can see the word to verse ratio in all Surahs is bimodal. We can see that the a great proportion of the Surahs have low word to verse ratio. So how many of them would it take to complete 1000 verses if I we ranked the Surahs by word to verse in ascending order?
 
 
-![an image alt text](../images/word_to_verse.png "Surahs DataFrame")
+![an image alt text](../images/cumlative_verses.png "Cumlative Verses plot")
+
+
 
 
 
