@@ -141,6 +141,15 @@ I've illustrated how you would do that exactly in the next plots
 ![an image alt text](../images/second_eight.png "Second Way - Eight Rakaas")
 
 
+Now you might have started reading somewhere else, and you want to continue reciting a specific number of verses, but you are still looking for an easy way to do it. That's why I've the following charts.
+
+![an image alt text](../images/other_1.png "Cumlative ascending")
+
+![an image alt text](../images/other_2.png "Cumlative Reversed")
+
+![an image alt text](../images/other_3.png "Verses Count")
+
+
 
 
 
