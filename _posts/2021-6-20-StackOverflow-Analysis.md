@@ -65,3 +65,19 @@ So it seems that the second group won the argument. But I think that we shouldn'
 
 
 
+## Is job satisfaction related to salary? or are there other factors?
+
+I thought that there might be a relationship between salary and job satisfaction, and when I saw the next plot I laughed out loud.
+
+![salary over satisfaction](../images/stackoverflow/salary_vs_js.png)
+
+How can the median salary decrease when satisfaction decreases, but then increase when dissatisfaction decreases below neutral?
+
+I though that maybe some developers were at a certain job for a long time, and hence they have high salaries, but just go fed up from it. So I tried to look for any relationships between dissastifaction and time at a job.
+
+![salary over satisfaction](../images/stackoverflow/js_vs_hiredate.png)
+
+
+Or maybe they have been at it for a long time, so they
+
+
