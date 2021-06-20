@@ -1,4 +1,4 @@
----
+---market_composition_donut
 layout: post
 title: Can You Still Get Hired As A Developer When You Have No CS Background?
 ---
@@ -34,4 +34,18 @@ The number of CS fresh graduates suddenly increased, and kept increasing through
 So even though it may be harder now than before, it still isn't impossible.
 
 And I think that I accept the challenge to be one of these 25%.
+
+
+## What non-degree education should a data scientist focus on?
+
+When I was first introduced to data science, I was torn between the two ways that people suggested for learning.
+
+Some people suggested starting with books, online courses, part-time programs and mainly starting with the theoritical part.
+
+While another groups insisted that the best way to learn data science is by doing, so pick a project to work on or participate in a compeitition in order to have something to show for the skills that companies need.
+
+So what I did was aggregate the mean salary for the respondents who said they used each on of the education methods listed in the survey, and this is what I found out.
+
+![mean salary of education](../images/stackoverflow/ds_eduation_mean_salary.png)
+
 
