@@ -1,4 +1,4 @@
----market_composition_donut
+---
 layout: post
 title: Can You Still Get Hired As A Developer When You Have No CS Background?
 ---
@@ -48,4 +48,11 @@ So what I did was aggregate the mean salary for the respondents who said they us
 
 ![mean salary of education](../images/stackoverflow/ds_eduation_mean_salary.png)
 
+The education method with the highest mean salary was industry certificates. For example, if you have an Azure Data Scientist Associate certification, you are technically certified by Microsoft that you can do Data Science on Azure. 
+
+As certificates go they certainly don't gurantee your skill, but to non-technical people like HR this can easily round up your experience and skills.
+
+Of course this doesn't 100% mean that industry certificate were the **reason** for getting a better paying job, and it might be that some really high paying jobs require their developers to take these certficates.
+
+The second one was on the job training, which goes hand in hand with the hypothesis that high paying jobs give training to their employees, and may require them to take some certificates in some technology like Microsft Azure or AWS.
 
