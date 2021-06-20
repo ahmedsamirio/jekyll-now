@@ -17,6 +17,12 @@ I chose to analyze the StackOverflow data from 2015 until 2020 to answer the que
 
 ## How present are professional developers with no CS background in the market?
 
-![market composition](../images/stackoverflow/ds_education_donut.png)
+![market composition](../images/stackoverflow/market_composition_donut.png)
 
-test
+To my surprise I found out that in the 2015 survey, developers with no CS background constitued about 41% of the respondents.
+
+And this percentage remained the same through 2016, before the sudden drop of 2017.
+
+When I examined why the percentage of professional respondents with no CS background decreased I found out the this was due to a continued increase in the number of CS fresh graduates which you can see in the next bar plot.
+
+![market composition](../images/stackoverflow/market_composition_bar.png)
