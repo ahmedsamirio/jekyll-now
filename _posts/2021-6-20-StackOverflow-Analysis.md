@@ -13,4 +13,6 @@ I chose to analyze the StackOverflow data from 2011 until 2020 to answer the que
 * Is job satisfaction related to salary? or are there other factors?
 
 
+## How present are professional developers with no CS background in the market?
+
 
