@@ -77,7 +77,10 @@ I though that maybe some developers were at a certain job for a long time, and h
 
 ![salary over satisfaction](../images/stackoverflow/js_vs_hiredate.png)
 
+This heatmap is basically vertically stacked barplots for the time at the current job over every satisfaction category, so when we see a fading color from up to down, then there is a positive correlation, and when the fading is from down to up the correlation is negative.
 
-Or maybe they have been at it for a long time, so they
+And this effect here isn't present in the way expected, so this scenario wasn't true.
 
+So I thought that there maybe some things that developers face in some jobs (even high paying ones) that make them unhappy, so I looked into how every satisfaction group viewed work challenges.
 
+![salary over satisfaction](../images/stackoverflow/js_vs_challenges.png)
