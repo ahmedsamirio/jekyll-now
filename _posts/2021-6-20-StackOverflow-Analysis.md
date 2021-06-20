@@ -77,10 +77,29 @@ I though that maybe some developers were at a certain job for a long time, and h
 
 ![salary over satisfaction](../images/stackoverflow/js_vs_hiredate.png)
 
-This heatmap is basically vertically stacked barplots for the time at the current job over every satisfaction category, so when we see a fading color from up to down, then there is a positive correlation, and when the fading is from down to up the correlation is negative.
+This heatmap is basically vertically stacked barplots for the time at the current job over every satisfaction category, so we want to observe a fading color in the columns from up to down, indicating positive correlation, or a fading from down to up, indicating negative correlation.
 
 And this effect here isn't present in the way expected, so this scenario wasn't true.
 
 So I thought that there maybe some things that developers face in some jobs (even high paying ones) that make them unhappy, so I looked into how every satisfaction group viewed work challenges.
 
 ![salary over satisfaction](../images/stackoverflow/js_vs_challenges.png)
+
+The columns that have the same color basically aren't different between satisfiend and dissatsified developers, but there are some columns which illuminated key differences between the different groups. These difference in terms of importance are:
+* Lack of support from management
+* Toxic work envrionment
+* Non-work commitments
+* Meetings
+
+Using these points we can illustrate a mental picture of a satisfied developer:
+* They tend to have some sort of competent management, and positive work envrionemnt.
+* They tend to have non-work commitments that challenge their work, which indicates that strive to achieve work-life balance.
+* They tend to be more involved in their work with their colleagues and other department through meetings, etc..
+
+While unsatisfied developers have the following:
+* They tend to distrust management competence
+* They might not have good work-life balance, and might be actually overworked
+* They are more secluded in their work environment and feel out of the loop
+
+
+
