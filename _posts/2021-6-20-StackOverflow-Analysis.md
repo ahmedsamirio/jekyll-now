@@ -100,4 +100,12 @@ While unsatisfied developers have the following:
 * They are more secluded in their work environment and feel out of the loop
 
 
+If you contemplate the difference between the two developers listed above, you'll understand why the difference isn't in salary. As the difference is related to the different experiences they both have in the job and their personal life.
 
+
+## Conclusion
+
+We could sum up the findings in these three points:
+* It is still possible to get hire when you have no CS background, but it will be slightly challenging
+* In order to learn better as a developer or data scientist, you should give more time to practical education methods 
+* Job dissatisfaction isn't related to salary, but it is deeply intertwined between the work environment and your personal life
