@@ -17,6 +17,6 @@ I chose to analyze the StackOverflow data from 2015 until 2020 to answer the que
 
 ## How present are professional developers with no CS background in the market?
 
-![market composition](images/stackoverflow/ds_education_donut.png)
+![market composition](../images/stackoverflow/ds_education_donut.png)
 
 test
