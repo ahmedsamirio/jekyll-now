@@ -26,3 +26,12 @@ And this percentage remained the same through 2016, before the sudden drop of 20
 When I examined why the percentage of professional respondents with no CS background decreased I found out the this was due to a continued increase in the number of CS fresh graduates which you can see in the next bar plot.
 
 ![market composition](../images/stackoverflow/market_composition_bar.png)
+
+Before 2017, the number of professional respondents with no CS background exceeded those with CS background, but we can see the shift that happened in 2017.
+
+The number of CS fresh graduates suddenly increased, and kept increasing through out 2018, but by then the composition of the market stabilised with an average 25% of the professional respondents having no CS background.
+
+So even though it may be harder now than before, it still isn't impossible.
+
+And I think that I accept the challenge to be one of these 25%.
+
