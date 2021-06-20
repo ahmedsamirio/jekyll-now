@@ -3,8 +3,6 @@ layout: post
 title: Can You Still Get Hired As A Developer When You Have No CS Background?
 ---
 
-## Motivation
-
 This question always bothers me when contemplating the career-shift I'm attempting to do.
 
 And that's why I started with this question in the first project of Udacity's Data Scientist Nanodegree.
