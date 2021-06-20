@@ -48,6 +48,11 @@ So what I did was aggregate the mean salary for the respondents who said they us
 
 ![mean salary of education](../images/stackoverflow/ds_eduation_mean_salary.png)
 
+From the get go we can see online classes and part-time programs are the last in line, which was kind of shocking for me because if we look into the percentage of each education method over the years, we see that the methods with the highest mean salaries aren't that popular.
+
+![mean salary of education](../images/stackoverflow/ds_education_donut.png)
+
+
 The education method with the highest mean salary was industry certificates. For example, if you have an Azure Data Scientist Associate certification, you are technically certified by Microsoft that you can do Data Science on Azure. 
 
 As certificates go they certainly don't gurantee your skill, but to non-technical people like HR this can easily round up your experience and skills.
@@ -55,4 +60,6 @@ As certificates go they certainly don't gurantee your skill, but to non-technica
 Of course this doesn't 100% mean that industry certificate were the **reason** for getting a better paying job, and it might be that some really high paying jobs require their developers to take these certficates.
 
 The second one was on the job training, which goes hand in hand with the hypothesis that high paying jobs give training to their employees, and may require them to take some certificates in some technology like Microsft Azure or AWS.
+
+
 
