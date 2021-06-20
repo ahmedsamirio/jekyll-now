@@ -109,3 +109,5 @@ We could sum up the findings in these three points:
 * It is still possible to get hire when you have no CS background, but it will be slightly challenging
 * In order to learn better as a developer or data scientist, you should give more time to practical education methods 
 * Job dissatisfaction isn't related to salary, but it is deeply intertwined between the work environment and your personal life
+
+You can check out the full analysis in [this](https://github.com/ahmedsamirio/stackoverflow-analysis) reposirtory.
