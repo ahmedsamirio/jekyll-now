@@ -3,7 +3,7 @@ layout: post
 title: Can You Still Get Hired as a Developer Without Having a CS Background?
 ---
 
-![header](https://github.com/ahmedsamirio/ahmedsamirio.github.io/blob/master/images/stackoverflow/2021-01-embedded-software-development-validation.webp)
+![header](../images/stackoverflow/swdeveloper.jpg)
 
 This question always bothers me when contemplating the career-shift I'm attempting to do.
 
