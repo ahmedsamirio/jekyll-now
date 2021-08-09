@@ -139,3 +139,132 @@ pairs = dialogue_df[['character', 'character_shifted']].values.tolist()[:-1]
 # remove dialogues from one character to themselves and sort exchanges
 pairs = ['-'.join(sorted(x)) for x in pairs if x[0] != x[1]]
 ```
+
+Another shortcoming of this method is that it wouldn't capture interaction between multiple characters, since it's a linear approach that depends on which character speaks after another.
+
+I originally had a solution for this which was to extract the scenes in the script, and use the appearances of characters together in scenes as interactions, but I honestly didn't care that much to implement it as the current method yielded nice results.
+
+Another important point was to remove characters which didn't appear much throughout the script, as they cluttered the visualization and made it look bad for no reason.
+  
+  
+```
+# top characters lines count
+characters_lines = dialogue_df.character.value_counts()
+top_characters = characters_lines[characters_lines > 5]
+
+# count exchanges
+pairs = pd.Series(pairs).value_counts()
+top_pairs = pairs[in_top_characters(pairs.index, top_characters)]
+```
+  
+And now since I had information about the characters, and how many dialogues they have, and the interactions between these characters, I was ready to move on to making the network.
+
+To remind you, a network graph consists of:
+
+1. Nodes
+2. Edges the connect nodes
+
+In our case the nodes where the characters, and the size of these nodes was the dialogue count throughout the script. The edges where the interactions between these characters.
+
+I used NetworkX and Plotly to create the graph using network graph. The code in here heavily relied on this repo [https://github.com/rweng18/midsummer_network](https://github.com/rweng18/midsummer_network).
+  
+  
+```
+def make_edge(x, y, text, width):
+    '''Creates a scatter trace for the edge between x's and y's with given width
+
+    Parameters
+    ----------
+    x    : a tuple of the endpoints' x-coordinates in the form, tuple([x0, x1, None])
+    
+    y    : a tuple of the endpoints' y-coordinates in the form, tuple([y0, y1, None])
+    
+    width: the width of the line
+
+    Returns
+    -------
+    An edge trace that goes between x0 and x1 with specified width.
+    '''
+    return go.Scatter(x=x,
+                      y=y,
+                      line=dict(width=width,
+                                color='cornflowerblue'),
+                      hoverinfo='none',
+                      text=([text]),
+                      mode='lines')
+
+
+def get_network_traces(top_characters, top_pairs, pair_chars):
+    dialogue = nx.Graph()
+    
+    # add node for each character
+    for char, count in top_characters.iteritems():
+        if char in pair_chars:
+            dialogue.add_node(char, size=count)
+        
+    # for each dialogue exchange between two character add an edge
+    for pair, count in top_pairs.iteritems():
+        char1, char2 = pair.split('-')
+        dialogue.add_edge(char1, char2, weight=count)
+        
+    # get positions for nodes
+    pos_ = nx.spring_layout(dialogue)
+    
+    # for each edge make edge trace, append to list
+    edge_trace = []
+    for edge in dialogue.edges():
+        if dialogue.edges()[edge]['weight'] > 0:
+            char1 = edge[0]
+            char2 = edge[1]
+
+            x0, y0 = pos_[char1]
+            x1, y1 = pos_[char2]
+
+            text   = char1 + '--' + char2 + ': ' + str(dialogue.edges()[edge]['weight'])
+            trace  = make_edge([x0, x1, None], [y0, y1, None], text,
+                               0.1*dialogue.edges()[edge]['weight']**0.5)
+            edge_trace.append(trace)
+            
+    # make a node trace
+    node_trace = go.Scatter(x         = [],
+                            y         = [],
+                            text      = [],
+                            textposition = "top center",
+                            textfont_size = 10,
+                            mode      = 'markers+text',
+                            hoverinfo = 'none',
+                            marker    = dict(color = [],
+                                             size  = [],
+                                             line  = None,
+                                             reversescale=True
+                                            ))
+    # For each node in dialogue, get the position and size and add to the node_trace
+    for node in dialogue.nodes():
+        x, y = pos_[node]
+        node_trace['x'] += tuple([x])
+        node_trace['y'] += tuple([y])
+        node_trace['marker']['color'] += tuple(['cornflowerblue'])
+        node_trace['marker']['size'] += tuple([dialogue.nodes()[node]['size']**0.7])
+        node_trace['text'] += tuple(['<b>' + node + '</b>'])
+        
+    return edge_trace, node_trace
+```
+  
+Until I have created an app that can take a movie script and output a network graph that looks like this:
+
+INSET IMAGE
+
+## Deploying the app using heroku
+
+My knowledge about web development in general is really shallow, but using what I've learned in the small course provided by Udacity in the nanodegree and the template for their original project, I was able to hack together a web app that suited my needs.
+
+I wanted the app to have a search bar with autocomplete which you can type the name of a movie in, and it would autocomplete based on the available scripts, with a button that loads the network graph on the same page. 
+
+The webapp is available at [https://movie-character-network.herokuapp.com/](https://movie-character-network.herokuapp.com/)
+  
+  
+I didn't care much for design, as the perfect is definitely the enemy of the good here.
+
+You can checkout the full code and understand more about deploying the webapp and running it in you environment in the github repo: [https://github.com/ahmedsamirio/movie-character-network](https://github.com/ahmedsamirio/movie-character-network)
+
+Thanks for reading.
