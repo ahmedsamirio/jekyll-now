@@ -1,5 +1,3 @@
-# Introduction
-
 ![post-background](../images/network/lotr-2.png)
 
 The story of this project starts in the Udacity Data Scientist Nanodegree. The Nanodegree has a simple course about web development using Bootstrap, Flask and JQuery. 
