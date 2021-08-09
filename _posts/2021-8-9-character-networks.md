@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Movie-Maps: A webapp to graph network of characters from movie scripts
+title: Movie-Maps: A Webapp that Graphs Network of Characters in Movie Scripts
 ---
 
 ![post-background](../images/network/lotr-2.png)
