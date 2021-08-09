@@ -278,7 +278,7 @@ This project is rather a fun way to look into the movies you love and see how th
 
 And some movies can be really centralized around one character like "Thor: Ragnarok".
 
-![thor](../images/thor.png)
+![thor](../images/network/thor.png)
 
 
 You can checkout the full code and understand more about deploying the webapp and running it in you environment in the [github repo](https://github.com/ahmedsamirio/movie-character-network).
