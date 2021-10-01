@@ -1066,11 +1066,11 @@ cluster_5 = clean_azdias[kmeans.labels_ == 5]
 
 ![Age Analysis](../images/arvato/Age.png)
 
-### Customers and Non-Customers
+#### Customers and Non-Customers
 
 We can see that customers have greater probability of being older, with almost 80% being above 45 years old. On the other hand non-customers tend have more than 50% of less than 46 years old. The age groups that is mostly shared between the two groups is 46-460 years group.
 
-### Customer Clusters
+#### Customer Clusters
 
 We can see that cluster 4 stand out with higher percentage of indiviudals less than 46 years old, while cluster 0 has more than 90% of it's population above 46 years old.
 
@@ -1080,11 +1080,11 @@ So cluster 0 includes is mostly elders with the majority being above 60 years ol
 
 ![Gender Analysis](../images/arvato/Gender.png)
 
-### Customers and Non-Customers
+#### Customers and Non-Customers
 
 The percentage of males in customers is higher than that in non-customers, while the percentage of females in both is higher than males.
 
-### Customer Clusters
+#### Customer Clusters
 
 Cluster 0 has an over representation of males, where males is higher than all clusters and higher than female percentage in the same cluster. While cluster 4 and 6 have higher female percentages than cluster 0.
 
@@ -1092,11 +1092,11 @@ Cluster 0 has an over representation of males, where males is higher than all cl
 
 ![Channels Analysis](../images/arvato/Channels.png)
 
-### Customer and Non-Customers
+#### Customer and Non-Customers
 
 We can see than customers exceed non-customers in percentages of advertising and consumption minamilists and traditionalists, while non-customers tend to be more open in that spectrum.
 
-### Customer Clusters
+#### Customer Clusters
 
 Since cluster 0 mostly represents elderly individuals, it's expected that they will be over represented in the minimalists and traditionlists. And also since cluster 4 represents the younger customers, we don't see alot of them as minimalist and traditionalists. And finally we can see that cluster 6 has the most uniform distribtution across the spectrum.
 
@@ -1104,11 +1104,11 @@ Since cluster 0 mostly represents elderly individuals, it's expected that they w
 
 ![Financial Analysis](../images/arvato/Financial.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 20% of customers are money savers, while another 20% are inverstors, and around 35% are unremarkable which I guess means that they have no specific financial type. On the other hand, non-customers tend to have low financial interest.
 
-## Customer Clusters
+#### Customer Clusters
 
 We can that the majority of cluster 0 with distinguished financial type are money savers, while in cluster 6 they are investors. Cluster 4 doesn't show a specific type.
 
@@ -1116,11 +1116,11 @@ We can that the majority of cluster 0 with distinguished financial type are mone
 
 ![Life Stage Analysis](../images/arvato/Life_Stage.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 The most frequent non-customer type is single low-income and average earners of younger age, while customers' most frequent type is singe high-income earner. However, there is no great difference between the most frequent value of customers and two next most frequent values, indicating the difference between clusters.
 
-## Customer Clusters
+#### Customer Clusters
 
 Around 70% of cluster 6 are single, with the majority of them being single low-income average earners of higher age., while the most frequent type in cluster 0 is single high-income earners, while cluster 4's most frequent type is high income earner of higher age from multiperson households. However, the remaining majority of cluster 4 types falls in younger aged families with different types of income.
 
@@ -1128,11 +1128,11 @@ Around 70% of cluster 6 are single, with the majority of them being single low-i
 
 ![Return Type Analysis](../images/arvato/Return.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 The most frequent type in customers is determined minimal returner, which I think means that these individuals aren't the shopping type. They only buy what they need when they need it. The second frequent type in incentive receptive normal returner. While in non-customers, we can see that the most frequent type is influencable crazy shopper, and these wouldn't definetly be interested in mail-order cataloges.
 
-## Customers Clusters
+#### Customers Clusters
 
 First off we can see the cluster 0 and 6 are the only populating most of the customers belonging to the determined minimal returner category, and that makes sense since they are older individuals, and we have found that they are consumption minimalists and traditionalists. On the other hand, cluster 4 populates every other category with frequency higher than the determined minmal returner one, with them most frequent being demanding heavy returner.
 
@@ -1140,11 +1140,11 @@ First off we can see the cluster 0 and 6 are the only populating most of the cus
 
 ![Main Age Analysis](../images/arvato/Main_Age.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 We have already investigated the age difference between customers and non-customers, and we can see that the main age within the household is also different between the two groups, where customers households tend be also older in age, while non-customers households tend to be younger.
 
-## Customer Clusters
+#### Customer Clusters
 
 We can see that cluster 4 is the main cluster populating younger ages in customers clusters, while cluster 0 and 6 have nearly identical distributions representing the elderly segments of the customers.
 
@@ -1152,15 +1152,15 @@ We can see that cluster 4 is the main cluster populating younger ages in custome
 
 ![Net Household Income Analysis](../images/arvato/Net_Household.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 We can see a huge difference between the distribution of customers and non-customers among estimated net household income, where more than 50% of non-customers come from very low income households, and only around 15% of customers do. The most frequent in customers is average income, and the second most is lower income. However, the total percentage of customers whose income is average or above exceeds 50%.
 
-## Customers Clusters
+#### Customers Clusters
 
 Now we can see a difference between the two older segments, which are cluster 0 and 6. We can see that over 60% of cluster 6 households have either lower or very low income, while more than 70% of cluster 0 has average or higher income. Similarily cluster 4 also has around 70% of it's households having average or higher income.
 
-### **Does this mean that cluster 6 is poorer than cluster 0?**
+#### **Does this mean that cluster 6 is poorer than cluster 0?**
 
 Will that would be the case if this feature indicated the income of the individual, however since this feature indicates the net household income, this doesn't say anything about the specific individuals in cluster 0 and 6. Since cluster 6 had more tendency to be single, it makes sense that cluster 0 household income would be higher, because if cluster 0 is financially above average, it's safe to say that probably the rest of their family is the same, and that would make their net income larger than the same individual if he was single, and that's the situation for cluster 6.
 
@@ -1168,11 +1168,11 @@ Will that would be the case if this feature indicated the income of the individu
 
 ![Neighborhood Analysis](../images/arvato/Neighborhood.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 The most frequent neighborhood area in both customers and non-customers is average neighborhoods, however the next most frequent for customers is rural neighborhoods, while that of non-customers is poor neighboorhoods. We can also see that the percentage of customers occupying above average neighborhood areas is larger than non-customers'.
 
-## Customers Clusters
+#### Customers Clusters
 
 We can see that our remark about the household income difference between cluster 0 and 6 has been useful, because cluster 6 to have the highest percentage occupying average and above neighborhood areas, while the most frequent neighborhood area for cluster 0 is rural areas, since they are mostly families. Cluster 4 is extremely similar to cluster 0 in this attribute.
 
@@ -1180,11 +1180,11 @@ We can see that our remark about the household income difference between cluster
 
 ![Moving Patterns Analysis](../images/arvato/Moving_Patterns.png)
 
-## Customers and Non-Customers
+#### Customers and Non-Customers
 
 50% of customers are classified as having low or very mobility, while more than 60% of non-customers are the extreme opposite, with classification of either high or very high mobility.
 
-## Customers Clusters
+#### Customers Clusters
 
 Once again we can see some of the differing factors between cluster 0 and 6, since cluster 6 are mostly single individuals, more than 60% of their moving pattern is high or very high and 25% have middle mobility. On the other hand, since cluster 0 and 4 tend to in families, their mobility is much lower than cluster 6, with almost 75% of cluster 0 having low or very low mobility, and 65% of cluster 4 having the same.
 
