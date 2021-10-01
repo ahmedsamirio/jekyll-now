@@ -3,10 +3,13 @@ layout: post
 title: Bertelsmann Arvato Capstone Project
 ---
 
+![Header Image](../images/arvato/header.png)
 
 First of all, I'm really happy to be writing this blog post as this signals the end of my Data Scientist Nano-degree journey generally, and the capstone project specifically. 
 
 I'd like to thank Udacity for providing us with this amazing dataset, which enabled me to test my abilities and to really learn some things that couldn't be learned through lessons alone.
+
+# Projet Overview
 
 In this project, I role-played that I was a Data Scientist at Bertelsmann Arvato Analytics, where I was handed over a project where the stakeholder was a mail-order sales company in Germany.
 
@@ -29,9 +32,7 @@ The datasets that we had were more than enough to begin addressing the requests 
 
 1. Data Exploration
 2. Data Cleaning
-
-## Data Exploration
-
+3. 
 The datasets that were provided were:
 
 1. `Udacity_AZDIAS_052018.csv`: Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).
@@ -40,6 +41,43 @@ The datasets that were provided were:
 4. `Udacity_MAILOUT_052018_TEST.csv`: Demographics data for individuals who were targets of a marketing campaign; 42 833 persons (rows) x 366 (columns).
 5. `DIAS Information Levels - Attributes 2017.xlsx`: Information about features in demographic data.
 6. `DIAS Attributes - Values 2017.xlsx`: Information about values of each feature in demographic data.
+
+
+# Problem Statement
+
+1. We need to find the segments in the general population which constitute the core customer base of the business.
+2. We need find out which targeted individuals in the new mailout campaign are more likely to convert.
+
+## How can we compare the populations of customers with the general population?
+1. First we shall explore the data to get to know the features within it.
+2. Then we shall segment the general population.
+3. Finally we shall figure out which segments do our customers belong to.
+
+## How can we find out which targeted individuals in the new campaign are likely to convert?
+1. We can use the provided features in addition to features we engineered from the unsupervised analysis to make a new dataset.
+2. Then we can use supervised learning to train a model to predict which individuals are more likely to convert
+
+
+# Metrics
+
+## Customer Segmentation
+We can use intertia to judge how many clusters we shall set the K-Means algorithm to find. Where inertia is the average distance between each data point and it's cluster center. The smaller the intertia, the better the model. However, inertia tends to decrease as we increase the number of clusters, so we will use the elbow method to determine the optimal cluster number where the improvement in inertia starts slowing down.
+
+## Mailout Campaign 
+That depends on margin of error that we are willing to except with our model. So for example, we might want a model that is able to predict all individuals likely to be customers, despite predicting a large sum of individuals that won't be customers. **In this case we'd want a model with higher Recall**.
+
+On the other hand, sending out to a huge mass might be expensive and counter-intuitive business-wise in some case. **In this case we'd want a model with higher Precision**.
+
+In order to get the best of both worlds, **we can use the F1-Score**, which calculate a harmonic average of Recall and Precision, penalizing a model that has bad scores for either one of the metrics.
+
+**Personally I prefer using F1-Score, specifically the macro-averaged F1-Score**, which calculate the average of F1-Score for each class regardless the number of data points belonging to that class, as a weighted average F1-Score wouldn't account the main class we are concerned with predicting due to it's extremely low number.
+
+However, I think that getting a model with high precision with this dataset would be a stretch, so my best guess right now is to use Recall, but the other metric to avoid a model with really bad precision.
+
+So I'll use Macro Recall, which calculates the recall of each class individually, then averages them, which is great for imbalanced classification.
+
+
+# Data Exploration
 
 The two main datasets that we were dealing with had a setback, they were both in CSV format, and due to there size, they took a really long time to load (around 25 minutes). 
 
@@ -376,7 +414,8 @@ We can see that there are 7 rows that have all the values for the features explo
 rows_missing_p = azdias_missing.isnull().sum(axis=1)/azdias_missing.shape[1]
 for i in np.arange(0, 0.8, 0.1):
     print("Percentage of rows with more than {:.2f}% values missing: {}".format(i*100, (rows_missing_p>i).sum()/azdias.shape[0]))
-
+```
+```markdown
 Percentage of rows with more than 0.00% values missing: 0.22381092905126787
 Percentage of rows with more than 10.00% values missing: 0.1727225906929931
 Percentage of rows with more than 20.00% values missing: 0.17272146863684765
@@ -393,7 +432,8 @@ We can see the there is almost 12% of rows that more than 50% missing values. In
 rows_missing_p = azdias_new.isnull().sum(axis=1)/azdias_new.shape[1]
 for i in np.arange(0, 0.8, 0.1):
     print("Percentage of rows with more than {:.2f}% values missing: {}".format(i*100, (rows_missing_p>i).sum()/azdias.shape[0]))
-
+```
+```markdown
 Percentage of rows with more than 0.00% values missing: 1.0
 Percentage of rows with more than 10.00% values missing: 0.17350802999480489
 Percentage of rows with more than 20.00% values missing: 0.14647545333873416
@@ -443,7 +483,7 @@ for feat, p in half_missing_rows_t["null_percentage"].iteritems():
     print(feat, category, p)
 ```
 
-```python
+```markdown
 WOHNLAGE Building 1.0
 ANZ_TITEL Household 1.0
 EINGEFUEGT_AM Unknown 1.0
@@ -600,7 +640,7 @@ no_cat_feats.sort_values("null_percentage", inplace=True)
 21. **ALTERSKATEGORIE FEIN** (AGE CATEGORY FINE) has 34% missing values (which are 0), and we know that they are missing because category 1 only has one data point, and 0 has 41188.
 22. The rest of the features have more than 50% missing values, so I'm going to drop them except **ANZ_KINDER** (probably the number of children), **ALTER_KINDX** (age of Xth child), as I understand their meaning and know that there missing values are not missing at random.
 
-## Data Cleaning
+# Data Preprocessing
 
 After the previous exploration, I was able to make some final decisions about how to clean the data for the tasks at hand.
 
@@ -773,7 +813,7 @@ imputed_azdias = imputer.fit_transform(clean_azdias).astype(np.float32)
 
 After finally imputing `AZDIAS` we were ready to go through with the first task which customer segmentation.
 
-## Customer Segmentation
+# Customer Segmentation
 
 As I mentioned in the beginning, in this part we are supposed to find the part of the general population that represents the core customer base of the business.
 
@@ -1150,7 +1190,7 @@ Once again we can see some of the differing factors between cluster 0 and 6, sin
 
 Now that I solidly understood the customer base through the previous analysis, I proceed to the next part.
 
-## Campaign Prediction
+# Mailout Campaign
 
 As I previously said, in this part we are supposed to make a supervised learning model based on campaign data provided in `Udacity_MAILOUT_052018_TRAIN.csv` which hold demographic data for individuals targeted in marketing campaigns paired with whether they have became customers or not.
 
@@ -1371,19 +1411,6 @@ We can see that this model still has bad performance, but it's siginifcantly bet
 
 The best thing about classification_report is that it gives us a variety of metrics that we can use to judge our model.
 
-### But how should we judge our model?
-
-That depends on margin of error that we are willing to except with our model. So for example, we might want a model that is able to predict all individuals likely to be customers, despite predicting a large sum of individuals that won't be customers. **In this case we'd want a model with higher Recall**.
-
-On the other hand, sending out to a huge mass might be expensive and counter-intuitive business-wise in some case. **In this case we'd want a model with higher Precision**.
-
-In order to get the best of both worlds, **we can use the F1-Score**, which calculate a harmonic average of Recall and Precision, penalizing a model that has bad scores for either one of the metrics.
-
-**Personally I prefer using F1-Score, specifically the macro-averaged F1-Score**, which calculate the average of F1-Score for each class regardless the number of data points belonging to that class, as a weighted average F1-Score wouldn't account the main class we are concerned with predicting due to it's extremely low number.
-
-It also looks like ROC AUC Macro is identical to Recall Macro, so we can use Recall as a proxy for ROC AUC instead of calculating it twice.
-
-I think that getting a model with high precision with this dataset would be a stretch, so my best guess right now is to use Recall, but the other metric to avoid a model with really bad precision.
 
 ### Therefore, we can see the results are:
 
@@ -1484,11 +1511,7 @@ Model:Linear SVM, Score:0.536 (+/- 0.009)
 Model:RBF SVM, Score:0.571 (+/- 0.016)
 ```
 
-We can see 
-that Bagging using LogisitcRegression and RBF SVM exceeded the recall of
- BalancedRandomForestClassifier. However we have to note that we didn't 
-increase the number of estimators, and we still don't know the exact 
-recall of the responsive class.
+We can see  that Bagging using LogisitcRegression and RBF SVM exceeded the recall of BalancedRandomForestClassifier. However we have to note that we didn't  increase the number of estimators, and we still don't know the exact recall of the responsive class.
 
 ### What if we trained them on the original data?
 
@@ -1519,10 +1542,7 @@ Model:Linear SVM, Score:0.576 (+/- 0.013)
 Model:RBF SVM, Score:0.573 (+/- 0.006)
 ```
 
-By comparing the results, we can see that all of the algorithms (except 
-Bagged KNN) perform better using the original data. However the 
-improvement in all of them compared to BalancedRandomForestClassifier is
- tiny, so we need not continue in exploring them.
+By comparing the results, we can see that all of the algorithms (except Bagged KNN) perform better using the original data. However the improvement in all of them compared to BalancedRandomForestClassifier is tiny, so we need not continue in exploring them.
 
 In terms of the significant improvement in BalancedRandomForestClassifier, this could be for two reasons:
 
@@ -1546,7 +1566,7 @@ model_validation(BalancedRandomForestClassifier(n_estimators=1000, random_state=
 ```
 
 ```markdown
-inal Report:
+Final Report:
               precision    recall  f1-score   support
 
          0.0       1.00      0.70      0.82     34658
@@ -1641,7 +1661,7 @@ Metric Score: 0.7035868915429383
 
 The results are worse than just using PCA features and new features.
 
-### What is we just use cluster distances and new features?
+### What if we just use cluster distances and new features?
 
 ```python
 # concatenate cluster labels to the clean dataset
@@ -1781,8 +1801,7 @@ weighted avg       0.98      0.70      0.81     35093
 Metric Score: 0.744009369775735
 ```
 
-**We can see that selecting that using the top 10 features is enough to improve the Macro Recall to 0.77.
-I'm still interested to see if we only use the feature selection on the PCA and old features only, while keeping the new feature and distances untouched.**
+**We can see that selecting that using the top 10 features is enough to improve the Macro Recall to 0.77. I'm still interested to see if we only use the feature selection on the PCA and old features only, while keeping the new feature and distances untouched.**
 
 ```python
 pca_feats = list(mailout_train_pca.columns)
@@ -1952,7 +1971,7 @@ pipeline_random = RandomizedSearchCV(estimator=pipeline, param_distributions=pip
 pipeline_random.fit(X_train.values, y_train.values)
 ```
 
-### RandomizedSearchCV Results
+## RandomizedSearchCV Results
 
 ```markdown
 Best parameters found: {'k_best__k': 5, 
@@ -1963,7 +1982,7 @@ Best parameters found: {'k_best__k': 5,
                         'clf__bootstrap': True}
 ```
 
-### Checking metrics of final pipeline
+## Checking metrics of final pipeline
 
 ```python
 pipeline.set_params(**best_params)
@@ -1991,7 +2010,7 @@ The results aren't state of the art, but we can see that we are able to predict 
 
 Comparing the results to the baseline model, the Macro Recall has improved by 8.62%
 
-### Tuning The Decision Boundary
+## Tuning The Decision Boundary
 
 Now the final the thing that we can do is to tune the decision boundary to get the best results that we can get using this model. In order to do this, we need to predict the probability of classes first.
 
@@ -2092,7 +2111,9 @@ Cleaning the general population dataset was really challenging for me, as it was
 
 This has forced me to find some methods to be able to digest the data in smaller portions to get a general idea about how it should be dealt with, like to into categories separately.
 
-Also, I really enjoyed the customer segmentation part, even though it could be improved since we only tried reducing dimensionality using PCA and clustered using K-Means, where we could have used different algorithms for clustering such as DBSCAN, Agglomerative Clustering or Gaussian Mixture Models.
+## Improvement
+
+I really enjoyed the customer segmentation part, even though it could be improved since we only tried reducing dimensionality using PCA and clustered using K-Means, where we could have used different algorithms for clustering such as DBSCAN, Agglomerative Clustering or Gaussian Mixture Models.
 
 Anyways I have learnt much through out this project and the Nano-degree in general, and I hope that you have enjoyed my capstone project's write up. 
 
