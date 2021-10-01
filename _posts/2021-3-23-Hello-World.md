@@ -2,6 +2,7 @@
 layout: post
 title: My first blog post!
 ---
+![Header Image](https://www.udacity.com/blog/wp-content/uploads/2020/11/Hello-World_Blog-scaled.jpeg)
 
 I started this blog because I found that I've made some good and bad projects that will go completely unnoticed if I didn't show them. And I don't mean showing them via github, because most of them are already there, and some are still laying sadly unfinished on my local drive. What I mean is showing these projects to other aspiring data scientists (and employers), and establish that I know what I'm talking about. I'm only a data scientist by trade and a pharmacist by profession, and who would hire a pharmacists with no coursework in CS or Maths into a data science position? I don't know but hopefully this blog, along with my github repo, can show future employers that I don't need a CS or Engineering degree to do the job.
 

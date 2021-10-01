@@ -3,6 +3,8 @@ layout: post
 title: How I built a Twitter crawler
 ---
 
+![Header Image](https://www.price2spy.com/blog/wp-content/uploads/2019/06/crawl.jpg)
+
 I was curious to use twitter data for a project I had in mind, and basically it was a answering a bunch of question regarding the behavior of users on twitter and how that is correlated with their followers' count. But when I got access to the developer's API, I was lost on how to get the data that I want. 
 
 Of course there are a bunch of packages like Tweepy, Python-twitter, ptt (Python twitter tools) and even Twint (which doesn't require access through Twitter's API) which you can use to get data from twitter, but what kind of data did I want?
