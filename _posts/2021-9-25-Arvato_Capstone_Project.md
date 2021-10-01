@@ -3,7 +3,7 @@ layout: post
 title: Bertelsmann Arvato Capstone Project
 ---
 
-![Header Image](../images/arvato/header.png)
+![Header Image](../images/arvato/header.jpeg)
 
 First of all, I'm really happy to be writing this blog post as this signals the end of my Data Scientist Nano-degree journey generally, and the capstone project specifically. 
 
