@@ -1064,7 +1064,7 @@ cluster_5 = clean_azdias[kmeans.labels_ == 5]
 
 ## Age
 
-![Age Analysis](../image/arvato/Age.png)
+![Age Analysis](../images/arvato/Age.png)
 
 ### Customers and Non-Customers
 
@@ -1078,7 +1078,7 @@ So cluster 0 includes is mostly elders with the majority being above 60 years ol
 
 ## Gender
 
-![Gender Analysis](../image/arvato/Gender.png)
+![Gender Analysis](../images/arvato/Gender.png)
 
 ### Customers and Non-Customers
 
