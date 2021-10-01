@@ -2,6 +2,7 @@
 layout: post
 title: How to Recite 1000 Quran Verses
 ---
+![an image alt text](../images/first_eight.png "First Way - Eight Rakaas")
 
 It was the end of Ramadan when I began thinking about how I shall address the habit of night prayers (qiyyam) after the holy month, and thinking to myself that I should specifiy a daily goal (werd). And then I remembered the hadith:
 
